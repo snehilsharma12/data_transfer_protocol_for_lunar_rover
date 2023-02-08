@@ -18,11 +18,13 @@ The header is 10 bytes and contains the following in order:
 • seq number: 2 bytes  
 • NACK number: 2 bytes  
 • window size: 1 byte  
+
 • [ data ]  
 The command IDs are:  
 • 100 = connect request  
 • 201 = send most recent image  
 • 420 = command end  
+
 The response IDs are:  
 • 100 = connect success  
 • 111 = busy  
@@ -31,9 +33,11 @@ The response IDs are:
 • 202 = image packet  
 • 203 = final image packet  
 • 220 = command end ack  
+
 Image Data response packet containsthe following in the data field:  
 • for response 201:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o size of each packet – 2 bytes  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o number of packets – 2 bytes  
+
 • for response 202:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o [image data]  

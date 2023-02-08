@@ -45,7 +45,7 @@ Image Data response packet containsthe following in the data field:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o [image data]  
 
 How to run:  
-
+You can specify the maximum size for each packet 
 Start rover first:  
 $java rover [rover port] [size of each img data pkt in bytes] [image path]  
   

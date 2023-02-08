@@ -43,3 +43,11 @@ Image Data response packet containsthe following in the data field:
 
 • for response 202:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o [image data]  
+
+How to run:  
+
+Start rover first:  
+$java rover <rover port> <size of each img data pkt in bytes> <image path>  
+  
+Start client:  
+$java client <client port> <rover port>  

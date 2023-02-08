@@ -33,7 +33,7 @@ The response IDs are:
 • 220 = command end ack  
 Image Data response packet containsthe following in the data field:  
 • for response 201:  
-  o size of each packet – 2 bytes  
-  o number of packets – 2 bytes  
+       o size of each packet – 2 bytes  
+       o number of packets – 2 bytes  
 • for response 202:  
-  o [image data]  
+       o [image data]  

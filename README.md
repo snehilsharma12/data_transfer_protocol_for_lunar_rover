@@ -47,7 +47,19 @@ Image Data response packet containsthe following in the data field:
 How to run:  
 You can specify the maximum size for each packet   
 Start rover first:  
-$java rover [rover port] [size of each img data pkt in bytes] [image path]  
+```java rover [rover port] [size of each img data pkt in bytes] [image path]```  
   
 Start client:  
-$java client [client port] [rover port]  
+```java client [client port] [rover port]```  
+
+
+# RIPv2 Routing
+Each rover can be treated as a router. There can be many rovers and they make up a network. 
+The RIPv2 routing protocol helps to route the data to the desired rover.
+
+Command line argument format for Main:
+
+```java Main <MulticastIP> <MulticastPort> <RouterID>```
+
+example: 
+```java Main 230.230.230.230 63001 1```
